@@ -1,4 +1,3 @@
-// GeneralPractitioner.java
 public class GeneralPractitioner extends HealthProfessional {
     private boolean canPrescribeMedication;
     private String clinicLocation;
@@ -10,7 +9,7 @@ public class GeneralPractitioner extends HealthProfessional {
     }
 
     public GeneralPractitioner(int id, String name, String specialization,
-                              boolean canPrescribeMedication, String clinicLocation) {
+                               boolean canPrescribeMedication, String clinicLocation) {
         super(id, name, specialization);
         this.canPrescribeMedication = canPrescribeMedication;
         this.clinicLocation = clinicLocation;
@@ -23,5 +22,22 @@ public class GeneralPractitioner extends HealthProfessional {
         System.out.println("Can Prescribe Medication: " + canPrescribeMedication);
         System.out.println("Clinic Location: " + clinicLocation);
         System.out.println("------------------------");
+    }
+    // Getter方法
+    public boolean isCanPrescribeMedication() {
+        return canPrescribeMedication;
+    }
+
+    public String getClinicLocation() {
+        return clinicLocation;
+    }
+
+    // Setter方法
+    public void setCanPrescribeMedication(boolean canPrescribeMedication) {
+        this.canPrescribeMedication = canPrescribeMedication;
+    }
+
+    public void setClinicLocation(String clinicLocation) {
+        this.clinicLocation = clinicLocation;
     }
 }

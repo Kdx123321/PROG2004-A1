@@ -25,3 +25,19 @@ public class Cardiologist extends HealthProfessional {
         System.out.println("------------------------");
     }
 }
+public boolean isPerformsSurgery() {
+    return performsSurgery;
+}
+
+public String getResearchFocus() {
+    return researchFocus;
+}
+
+public void setPerformsSurgery(boolean performsSurgery) {
+    this.performsSurgery = performsSurgery;
+}
+
+public void setResearchFocus(String researchFocus) {
+    this.researchFocus = researchFocus;
+}
+}
