@@ -1,21 +1,23 @@
-// Cardiologist.java
 public class Cardiologist extends HealthProfessional {
     private boolean performsSurgery;
     private String researchFocus;
 
+    // 默认构造器
     public Cardiologist() {
         super();
         this.performsSurgery = false;
         this.researchFocus = "Cardiac Health";
     }
 
+    // 带参数构造器
     public Cardiologist(int id, String name, String specialization,
-                       boolean performsSurgery, String researchFocus) {
+                        boolean performsSurgery, String researchFocus) {
         super(id, name, specialization);
         this.performsSurgery = performsSurgery;
         this.researchFocus = researchFocus;
     }
 
+    // 打印详细信息
     @Override
     public void printDetails() {
         System.out.println("Health Professional Type: Cardiologist");
@@ -24,20 +26,21 @@ public class Cardiologist extends HealthProfessional {
         System.out.println("Research Focus: " + researchFocus);
         System.out.println("------------------------");
     }
-}
-public boolean isPerformsSurgery() {
-    return performsSurgery;
-}
 
-public String getResearchFocus() {
-    return researchFocus;
-}
+    // Getter和Setter方法
+    public boolean isPerformsSurgery() {
+        return performsSurgery;
+    }
 
-public void setPerformsSurgery(boolean performsSurgery) {
-    this.performsSurgery = performsSurgery;
-}
+    public void setPerformsSurgery(boolean performsSurgery) {
+        this.performsSurgery = performsSurgery;
+    }
 
-public void setResearchFocus(String researchFocus) {
-    this.researchFocus = researchFocus;
-}
+    public String getResearchFocus() {
+        return researchFocus;
+    }
+
+    public void setResearchFocus(String researchFocus) {
+        this.researchFocus = researchFocus;
+    }
 }
